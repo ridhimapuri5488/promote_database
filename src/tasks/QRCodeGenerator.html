@@ -1,0 +1,412 @@
+<html>
+<title>QR Codes</title>
+
+
+
+
+<script type="text/javascript" src="qrcode.js"></script>
+<script type="text/javascript" src="qrcanvas.js"></script>
+
+<body>
+<div id = "QRmsg1" style = "display:none;">
+	<div id ="qr_msg"  style = "position:absolute;top:0px;left:50px;"></div>
+	<div id ="qr_msg2" style = "position:absolute;top:0px;left:183px;"></div>
+	<div id ="qr_msg3" style = "position:absolute;top:0px;left:316px;"></div>
+	<div id ="qr_msg4" style = "position:absolute;top:0px;left:449px;"></div>
+	<div id ="qr_msg5" style = "position:absolute;top:0px;left:582px;"></div>
+	<div id ="qr_msg6" style = "position:absolute;top:60px;left:50px;"></div>
+	<!--<div id ="qr_msg7" style = "position:absolute;top:60px;left:183px;"></div>-->
+	<div id ="qr_msg8" style = "position:absolute;top:60px;left:183px;"></div>
+	<div id ="qr_msg9" style = "position:absolute;top:60px;left:316px;"></div>
+	<div id="qr_msg10" style = "position:absolute;top:60px;left:449px;"></div>
+	<div id="qr_msg11" style = "position:absolute;top:60px;left:582px;"></div>
+	<div id="qr_msg12" style = "position:absolute;top:120px;left:50px;"></div>
+	<div id="qr_msg13" style = "position:absolute;top:120px;left:183px;"></div>
+	<!--<div id="qr_msg14" style = "position:absolute;top:120px;left:449px;"></div>-->
+	<div id="qr_msg15" style = "position:absolute;top:120px;left:316px;"></div>
+	<div id="qr_msg16" style = "position:absolute;top:120px;left:449px;"></div>
+	<div id="qr_msg17" style = "position:absolute;top:120px;left:582px;"></div>
+	<div id="qr_msg18" style = "position:absolute;top:180px;left:50px;"></div>
+	<!--<div id="qr_msg19" style = "position:absolute;top:180px;left:449px;"></div>
+	<div id="qr_msg20" style = "position:absolute;top:180px;left:582px;"></div>
+	<div id="qr_msg21" style = "position:absolute;top:240px;left:50px;"></div>-->
+	<div id="qr_msg22" style = "position:absolute;top:180px;left:183px;"></div>
+	<div id="qr_msg23" style = "position:absolute;top:180px;left:316px;"></div>
+	<div id="qr_msg24" style = "position:absolute;top:180px;left:449px;"></div>
+	<div id="qr_msg25" style = "position:absolute;top:180px;left:582px;"></div>
+</div>	
+
+<div id = "QRmsg2" style = "display:none;">
+	<div id ="2qr_msg"  style = "position:absolute;top:240px;left:50px;"></div>
+	<div id ="2qr_msg2" style = "position:absolute;top:240px;left:183px;"></div>
+	<div id ="2qr_msg3" style = "position:absolute;top:240px;left:316px;"></div>
+	<div id ="2qr_msg4" style = "position:absolute;top:240px;left:449px;"></div>
+	<div id ="2qr_msg5" style = "position:absolute;top:240px;left:582px;"></div>
+	<div id ="2qr_msg6" style = "position:absolute;top:300px;left:50px;"></div>
+	<!--<div id ="2qr_msg7" style = "position:absolute;top:360px;left:183px;"></div>-->
+	<div id ="2qr_msg8" style = "position:absolute;top:300px;left:183px;"></div>
+	<div id ="2qr_msg9" style = "position:absolute;top:300px;left:316px;"></div>
+	<div id="2qr_msg10" style = "position:absolute;top:300px;left:449px;"></div>
+	<div id="2qr_msg11" style = "position:absolute;top:300px;left:582px;"></div>
+	<div id="2qr_msg12" style = "position:absolute;top:360px;left:50px;"></div>
+	<div id="2qr_msg13" style = "position:absolute;top:360px;left:183px;"></div>
+	<!--<div id="2qr_msg14" style = "position:absolute;top:420px;left:449px;"></div>-->
+	<div id="2qr_msg15" style = "position:absolute;top:360px;left:316px;"></div>
+	<div id="2qr_msg16" style = "position:absolute;top:360px;left:449px;"></div>
+	<div id="2qr_msg17" style = "position:absolute;top:360px;left:582px;"></div>
+	<div id="2qr_msg18" style = "position:absolute;top:420px;left:50px;"></div>
+	<!--<div id="2qr_msg19" style = "position:absolute;top:480px;left:449px;"></div>
+	<div id="2qr_msg20" style = "position:absolute;top:480px;left:582px;"></div>
+	<div id="2qr_msg21" style = "position:absolute;top:540px;left:50px;"></div>-->
+	<div id="2qr_msg22" style = "position:absolute;top:420px;left:183px;"></div>
+	<div id="2qr_msg23" style = "position:absolute;top:420px;left:316px;"></div>
+	<div id="2qr_msg24" style = "position:absolute;top:420px;left:449px;"></div>
+	<div id="2qr_msg25" style = "position:absolute;top:420px;left:582px;"></div>
+</div>
+
+<div id = "QRmsg3" style = "display: none;">
+	<div id ="3qr_msg"  style = "position:absolute;top:480px;left:50px;"></div>
+	<div id ="3qr_msg2" style = "position:absolute;top:480px;left:183px;"></div>
+	<div id ="3qr_msg3" style = "position:absolute;top:480px;left:316px;"></div>
+	<div id ="3qr_msg4" style = "position:absolute;top:480px;left:449px;"></div>
+	<div id ="3qr_msg5" style = "position:absolute;top:480px;left:582px;"></div>
+	<div id ="3qr_msg6" style = "position:absolute;top:540px;left:50px;"></div>
+	<!--<div id ="3qr_msg7" style = "position:absolute;top:660px;left:183px;"></div>-->
+	<div id ="3qr_msg8" style = "position:absolute;top:540px;left:183px;"></div>
+	<div id ="3qr_msg9" style = "position:absolute;top:540px;left:316px;"></div>
+	<div id="3qr_msg10" style = "position:absolute;top:540px;left:449px;"></div>
+	<div id="3qr_msg11" style = "position:absolute;top:540px;left:582px;"></div>
+	<div id="3qr_msg12" style = "position:absolute;top:600px;left:50px;"></div>
+	<div id="3qr_msg13" style = "position:absolute;top:600px;left:183px;"></div>
+	<!--<div id="3qr_msg14" style = "position:absolute;top:720px;left:449px;"></div>-->
+	<div id="3qr_msg15" style = "position:absolute;top:600px;left:316px;"></div>
+	<div id="3qr_msg16" style = "position:absolute;top:600px;left:449px;"></div>
+	<div id="3qr_msg17" style = "position:absolute;top:600px;left:582px;"></div>
+	<div id="3qr_msg18" style = "position:absolute;top:660px;left:50px;"></div>
+	<!--<div id="3qr_msg19" style = "position:absolute;top:780px;left:449px;"></div>
+	<div id="3qr_msg20" style = "position:absolute;top:780px;left:582px;"></div>
+	<div id="3qr_msg21" style = "position:absolute;top:840px;left:50px;"></div>-->
+	<div id="3qr_msg22" style = "position:absolute;top:660px;left:183px;"></div>
+	<div id="3qr_msg23" style = "position:absolute;top:660px;left:316px;"></div>
+	<div id="3qr_msg24" style = "position:absolute;top:660px;left:449px;"></div>
+	<div id="3qr_msg25" style = "position:absolute;top:660px;left:582px;"></div>
+</div>
+
+<div id = "QRlabel1" style = "display: none;">
+	<p id = "qr_label" style = "position:absolute;top:-6px;left:75px;font-size:50%;"></p>
+	<p id= "qr_label2" style = "position:absolute;top:-6px;left:208px;font-size:50%;"></p>
+	<p id= "qr_label3" style = "position:absolute;top:-6px;left:341px;font-size:50%;"></p>
+	<p id= "qr_label4" style = "position:absolute;top:-6px;left:474px;font-size:50%;"></p>
+	<p id= "qr_label5" style = "position:absolute;top:-6px;left:607px;font-size:50%;"></p>
+	<p id= "qr_label6" style = "position:absolute;top:54px;left:75px;font-size:50%;"></p>
+	<!--<p id= "qr_label7" style = "position:absolute;top:54px;left:208px;font-size:50%;"></p>-->
+	<p id= "qr_label8" style = "position:absolute;top:54px;left:208px;font-size:50%;"></p>
+	<p id= "qr_label9" style = "position:absolute;top:54px;left:341px;font-size:50%;"></p>
+	<p id="qr_label10" style = "position:absolute;top:54px;left:474px;font-size:50%;"></p>
+	<p id="qr_label11" style = "position:absolute;top:54px;left:607px;font-size:50%;"></p>
+	<p id="qr_label12" style = "position:absolute;top:114px;left:75px;font-size:50%;"></p>
+	<p id="qr_label13" style = "position:absolute;top:114px;left:208px;font-size:50%;"></p>
+	<!--<p id="qr_label14" style = "position:absolute;top:114px;left:474px;font-size:50%;"></p>-->
+	<p id="qr_label15" style = "position:absolute;top:114px;left:341px;font-size:50%;"></p>
+	<p id="qr_label16" style = "position:absolute;top:114px;left:474px;font-size:50%;"></p>
+	<p id="qr_label17" style = "position:absolute;top:114px;left:607px;font-size:50%;"></p>
+	<p id="qr_label18" style = "position:absolute;top:174px;left:75px;font-size:50%;"></p>
+	<!--<p id="qr_label19" style = "position:absolute;top:174px;left:474px;font-size:50%;"></p>-->
+	<!--<p id="qr_label20" style = "position:absolute;top:174px;left:607px;font-size:50%;"></p>-->
+	<!--<p id="qr_label21" style = "position:absolute;top:234px;left:75px;font-size:50%;"></p>-->
+	<p id="qr_label22" style = "position:absolute;top:174px;left:208px;font-size:50%;"></p>
+	<p id="qr_label23" style = "position:absolute;top:174px;left:341px;font-size:50%;"></p>
+	<p id="qr_label24" style = "position:absolute;top:174px;left:474px;font-size:50%;"></p>
+	<p id="qr_label25" style = "position:absolute;top:174px;left:607px;font-size:50%;"></p>
+	
+</div>
+
+<div id = "QRlabel2" style = "display: none;">
+	<p id = "2qr_label" style = "position:absolute;top:234px;left:75px;font-size:50%;"></p>
+	<p id= "2qr_label2" style = "position:absolute;top:234px;left:208px;font-size:50%;"></p>
+	<p id= "2qr_label3" style = "position:absolute;top:234px;left:341px;font-size:50%;"></p>
+	<p id= "2qr_label4" style = "position:absolute;top:234px;left:474px;font-size:50%;"></p>
+	<p id= "2qr_label5" style = "position:absolute;top:234px;left:607px;font-size:50%;"></p>
+	<p id= "2qr_label6" style = "position:absolute;top:294px;left:75px;font-size:50%;"></p>
+	<!--<p id= "2qr_label7" style = "position:absolute;top:354px;left:208px;font-size:50%;"></p>-->
+	<p id= "2qr_label8" style = "position:absolute;top:294px;left:208px;font-size:50%;"></p>
+	<p id= "2qr_label9" style = "position:absolute;top:294px;left:341px;font-size:50%;"></p>
+	<p id="2qr_label10" style = "position:absolute;top:294px;left:474px;font-size:50%;"></p>
+	<p id="2qr_label11" style = "position:absolute;top:294px;left:607px;font-size:50%;"></p>
+	<p id="2qr_label12" style = "position:absolute;top:354px;left:75px;font-size:50%;"></p>
+	<p id="2qr_label13" style = "position:absolute;top:354px;left:208px;font-size:50%;"></p>
+	<!--<p id="2qr_label14" style = "position:absolute;top:414px;left:474px;font-size:50%;"></p>-->
+	<p id="2qr_label15" style = "position:absolute;top:354px;left:341px;font-size:50%;"></p>
+	<p id="2qr_label16" style = "position:absolute;top:354px;left:474px;font-size:50%;"></p>
+	<p id="2qr_label17" style = "position:absolute;top:354px;left:607px;font-size:50%;"></p>
+	<p id="2qr_label18" style = "position:absolute;top:414px;left:75px;font-size:50%;"></p>
+	<!--<p id="2qr_label19" style = "position:absolute;top:474px;left:474px;font-size:50%;"></p>
+	<p id="2qr_label20" style = "position:absolute;top:474px;left:607px;font-size:50%;"></p>
+	<p id="2qr_label21" style = "position:absolute;top:534px;left:75px;font-size:50%;"></p>-->
+	<p id="2qr_label22" style = "position:absolute;top:414px;left:208px;font-size:50%;"></p>
+	<p id="2qr_label23" style = "position:absolute;top:414px;left:341px;font-size:50%;"></p>
+	<p id="2qr_label24" style = "position:absolute;top:414px;left:474px;font-size:50%;"></p>
+	<p id="2qr_label25" style = "position:absolute;top:414px;left:607px;font-size:50%;"></p>
+</div>
+
+<div id = "QRlabel3" style = "display: none;">
+	<p id = "3qr_label" style = "position:absolute;top:474px;left:75px;font-size:50%;"></p>
+	<p id= "3qr_label2" style = "position:absolute;top:474px;left:208px;font-size:50%;"></p>
+	<p id= "3qr_label3" style = "position:absolute;top:474px;left:341px;font-size:50%;"></p>
+	<p id= "3qr_label4" style = "position:absolute;top:474px;left:474px;font-size:50%;"></p>
+	<p id= "3qr_label5" style = "position:absolute;top:474px;left:607px;font-size:50%;"></p>
+	<p id= "3qr_label6" style = "position:absolute;top:534px;left:75px;font-size:50%;"></p>
+	<!--<p id= "3qr_label7" style = "position:absolute;top:654px;left:208px;font-size:50%;"></p>-->
+	<p id= "3qr_label8" style = "position:absolute;top:534px;left:208px;font-size:50%;"></p>
+	<p id= "3qr_label9" style = "position:absolute;top:534px;left:341px;font-size:50%;"></p>
+	<p id="3qr_label10" style = "position:absolute;top:534px;left:474px;font-size:50%;"></p>
+	<p id="3qr_label11" style = "position:absolute;top:534px;left:607px;font-size:50%;"></p>
+	<p id="3qr_label12" style = "position:absolute;top:594px;left:75px;font-size:50%;"></p>
+	<p id="3qr_label13" style = "position:absolute;top:594px;left:208px;font-size:50%;"></p>
+	<!--<p id="3qr_label14" style = "position:absolute;top:714px;left:474px;font-size:50%;"></p>-->
+	<p id="3qr_label15" style = "position:absolute;top:594px;left:341px;font-size:50%;"></p>
+	<p id="3qr_label16" style = "position:absolute;top:594px;left:474px;font-size:50%;"></p>
+	<p id="3qr_label17" style = "position:absolute;top:594px;left:607px;font-size:50%;"></p>
+	<p id="3qr_label18" style = "position:absolute;top:654px;left:75px;font-size:50%;"></p>
+	<!--<p id="3qr_label19" style = "position:absolute;top:774px;left:474px;font-size:50%;"></p>
+	<p id="3qr_label20" style = "position:absolute;top:774px;left:607px;font-size:50%;"></p>
+	<p id="3qr_label21" style = "position:absolute;top:834px;left:75px;font-size:50%;"></p>-->
+	<p id="3qr_label22" style = "position:absolute;top:654px;left:208px;font-size:50%;"></p>
+	<p id="3qr_label23" style = "position:absolute;top:654px;left:341px;font-size:50%;"></p>
+	<p id="3qr_label24" style = "position:absolute;top:654px;left:474px;font-size:50%;"></p>
+	<p id="3qr_label25" style = "position:absolute;top:654px;left:607px;font-size:50%;"></p>
+</div>
+
+<form id = "Input"> 
+	Batch Code 1:<br>
+	<input type = "text", id = "Code1"><br>
+	Batch Code 2:<br>
+	<input type = "text", id = "Code2"><br>
+	Batch Code 3:<br>
+	<input type = "text", id = "Code3"><br><br>
+	
+	Individual Code 1:<br>
+	<input type = "text", id = "IndividualCode1"><br>
+	Individual Code 2:<br>
+	<input type = "text", id = "IndividualCode2"><br>
+	Individual Code 3:<br>
+	<input type = "text", id = "IndividualCode3"><br>
+	Individual Code 4:<br>
+	<input type = "text", id = "IndividualCode4"><br>
+	Individual Code 5:<br>
+	<input type = "text", id = "IndividualCode5"><br>
+	Individual Code 6:<br>
+	<input type = "text", id = "IndividualCode6"><br><br>
+	<input type = "button" id = "Button" onclick = "GenerateCodes()" value = "Generate Codes"><br><br>
+</form>
+
+<script type="text/javascript">
+function GenerateCodes(Code1,Code2,Code3){
+	document.getElementById("Input").style.display = "none";
+	var d=new Date();
+	var month = d.getUTCMonth() + 1;
+	var day = d.getUTCDate();
+	var year  = d.getUTCFullYear();
+	newdate = month+ "/" +day+"/"+year; 
+	var SampleCode = document.getElementById("Code1").value;
+	var SampleCode2 = document.getElementById("Code2").value;
+	var SampleCode3 = document.getElementById("Code3").value;
+	var IndiCode1 = document.getElementById("IndividualCode1").value;
+	var IndiCode2 = document.getElementById("IndividualCode2").value;
+	var IndiCode3 = document.getElementById("IndividualCode3").value;
+	var IndiCode4 = document.getElementById("IndividualCode4").value;
+	var IndiCode5 = document.getElementById("IndividualCode5").value;
+	var IndiCode6 = document.getElementById("IndividualCode6").value;
+	
+	if(SampleCode!=""){
+		document.getElementById("qr_label").innerHTML = SampleCode.concat("S01") + "<br />" + newdate; 
+		document.getElementById("qr_label2").innerHTML = SampleCode.concat("S02") + "<br />" + newdate; 
+		document.getElementById("qr_label3").innerHTML = SampleCode.concat("S03") + "<br />" + newdate; 
+		document.getElementById("qr_label4").innerHTML = SampleCode.concat("S04") + "<br />" + newdate; 
+		document.getElementById("qr_label5").innerHTML = SampleCode.concat("S05") + "<br />" + newdate; 
+		document.getElementById("qr_label6").innerHTML = SampleCode.concat("S06") + "<br />" + newdate; 
+		//document.getElementById("qr_label7").innerHTML = SampleCode.concat("S07") + "<br />" + newdate; 
+		document.getElementById("qr_label8").innerHTML = SampleCode.concat("P01") + "<br />" + newdate; 
+		document.getElementById("qr_label9").innerHTML = SampleCode.concat("P02") + "<br />" + newdate; 
+		document.getElementById("qr_label10").innerHTML = SampleCode.concat("P03") + "<br />" + newdate; 
+		document.getElementById("qr_label11").innerHTML = SampleCode.concat("P04") + "<br />" + newdate; 
+		document.getElementById("qr_label12").innerHTML = SampleCode.concat("P05") + "<br />" + newdate; 
+		document.getElementById("qr_label13").innerHTML = SampleCode.concat("P06") + "<br />" + newdate; 
+		//document.getElementById("qr_label14").innerHTML = SampleCode.concat("P07") + "<br />" + newdate; 
+		document.getElementById("qr_label15").innerHTML = SampleCode.concat("C01") + "<br />" + newdate; 
+		document.getElementById("qr_label16").innerHTML = SampleCode.concat("C02") + "<br />" + newdate; 
+		document.getElementById("qr_label17").innerHTML = SampleCode.concat("C03") + "<br />" + newdate; 
+		document.getElementById("qr_label18").innerHTML = SampleCode.concat("C04") + "<br />" + newdate; 
+		//document.getElementById("qr_label19").innerHTML = SampleCode.concat("C05") + "<br />" + newdate; 
+		//document.getElementById("qr_label20").innerHTML = SampleCode.concat("C06") + "<br />" + newdate; 
+		//document.getElementById("qr_label21").innerHTML = SampleCode.concat("C07") + "<br />" + newdate; 
+		document.getElementById("qr_label22").innerHTML = SampleCode.concat("PBMC01") + "<br />" + newdate; 
+		document.getElementById("qr_label23").innerHTML = SampleCode.concat("PBMC01") + "<br />" + newdate; 
+		 
+		
+		append_qrcode(1,"qr_msg",SampleCode.concat("S01"));
+		append_qrcode(1,"qr_msg2",SampleCode.concat("S02"));
+		append_qrcode(1,"qr_msg3",SampleCode.concat("S03"));
+		append_qrcode(1,"qr_msg4",SampleCode.concat("S04"));
+		append_qrcode(1,"qr_msg5",SampleCode.concat("S05"));
+		append_qrcode(1,"qr_msg6",SampleCode.concat("S06"));
+		//append_qrcode(1,"qr_msg7",SampleCode.concat("S07"));
+		append_qrcode(1,"qr_msg8",SampleCode.concat("P01"));
+		append_qrcode(1,"qr_msg9",SampleCode.concat("P02"));
+		append_qrcode(1,"qr_msg10",SampleCode.concat("P03"));
+		append_qrcode(1,"qr_msg11",SampleCode.concat("P04"));
+		append_qrcode(1,"qr_msg12",SampleCode.concat("P05"));
+		append_qrcode(1,"qr_msg13",SampleCode.concat("P06"));
+		//append_qrcode(1,"qr_msg14",SampleCode.concat("P07"));
+		append_qrcode(1,"qr_msg15",SampleCode.concat("C01"));
+		append_qrcode(1,"qr_msg16",SampleCode.concat("C02"));
+		append_qrcode(1,"qr_msg17",SampleCode.concat("C03"));
+		append_qrcode(1,"qr_msg18",SampleCode.concat("C04"));
+		//append_qrcode(1,"qr_msg19",SampleCode.concat("C05"));
+		//append_qrcode(1,"qr_msg20",SampleCode.concat("C06"));
+		//append_qrcode(1,"qr_msg21",SampleCode.concat("C07"));
+		append_qrcode(1,"qr_msg22",SampleCode.concat("PBMC01"));
+		append_qrcode(1,"qr_msg23",SampleCode.concat("PBMC02"));
+
+		}
+	if(SampleCode2!=""){
+		document.getElementById("2qr_label").innerHTML = SampleCode2.concat("S01") + "<br />" + newdate; 
+		document.getElementById("2qr_label2").innerHTML = SampleCode2.concat("S02") + "<br />" + newdate; 
+		document.getElementById("2qr_label3").innerHTML = SampleCode2.concat("S03") + "<br />" + newdate; 
+		document.getElementById("2qr_label4").innerHTML = SampleCode2.concat("S04") + "<br />" + newdate; 
+		document.getElementById("2qr_label5").innerHTML = SampleCode2.concat("S05") + "<br />" + newdate; 
+		document.getElementById("2qr_label6").innerHTML = SampleCode2.concat("S06") + "<br />" + newdate; 
+		//document.getElementById("2qr_label7").innerHTML = SampleCode2.concat("S07") + "<br />" + newdate; 
+		document.getElementById("2qr_label8").innerHTML = SampleCode2.concat("P01") + "<br />" + newdate; 
+		document.getElementById("2qr_label9").innerHTML = SampleCode2.concat("P02") + "<br />" + newdate; 
+		document.getElementById("2qr_label10").innerHTML = SampleCode2.concat("P03") + "<br />" + newdate; 
+		document.getElementById("2qr_label11").innerHTML = SampleCode2.concat("P04") + "<br />" + newdate; 
+		document.getElementById("2qr_label12").innerHTML = SampleCode2.concat("P05") + "<br />" + newdate; 
+		document.getElementById("2qr_label13").innerHTML = SampleCode2.concat("P06") + "<br />" + newdate; 
+		//document.getElementById("2qr_label14").innerHTML = SampleCode2.concat("P07") + "<br />" + newdate; 
+		document.getElementById("2qr_label15").innerHTML = SampleCode2.concat("C01") + "<br />" + newdate; 
+		document.getElementById("2qr_label16").innerHTML = SampleCode2.concat("C02") + "<br />" + newdate; 
+		document.getElementById("2qr_label17").innerHTML = SampleCode2.concat("C03") + "<br />" + newdate; 
+		document.getElementById("2qr_label18").innerHTML = SampleCode2.concat("C04") + "<br />" + newdate; 
+		//document.getElementById("2qr_label19").innerHTML = SampleCode2.concat("C05") + "<br />" + newdate; 
+		//document.getElementById("2qr_label20").innerHTML = SampleCode2.concat("C06") + "<br />" + newdate; 
+		//document.getElementById("2qr_label21").innerHTML = SampleCode2.concat("C07") + "<br />" + newdate; 
+		document.getElementById("2qr_label22").innerHTML = SampleCode2.concat("PBMC01") + "<br />" + newdate; 
+		document.getElementById("2qr_label23").innerHTML = SampleCode2.concat("PBMC01") + "<br />" + newdate;
+
+			
+		append_qrcode(1,"2qr_msg",SampleCode2.concat("S01"));
+		append_qrcode(1,"2qr_msg2",SampleCode2.concat("S02"));
+		append_qrcode(1,"2qr_msg3",SampleCode2.concat("S03"));
+		append_qrcode(1,"2qr_msg4",SampleCode2.concat("S04"));
+		append_qrcode(1,"2qr_msg5",SampleCode2.concat("S05"));
+		append_qrcode(1,"2qr_msg6",SampleCode2.concat("S06"));
+		//append_qrcode(1,"2qr_msg7",SampleCode2.concat("S07"));
+		append_qrcode(1,"2qr_msg8",SampleCode2.concat("P01"));
+		append_qrcode(1,"2qr_msg9",SampleCode2.concat("P02"));
+		append_qrcode(1,"2qr_msg10",SampleCode2.concat("P03"));
+		append_qrcode(1,"2qr_msg11",SampleCode2.concat("P04"));
+		append_qrcode(1,"2qr_msg12",SampleCode2.concat("P05"));
+		append_qrcode(1,"2qr_msg13",SampleCode2.concat("P06"));
+		//append_qrcode(1,"2qr_msg14",SampleCode2.concat("P07"));
+		append_qrcode(1,"2qr_msg15",SampleCode2.concat("C01"));
+		append_qrcode(1,"2qr_msg16",SampleCode2.concat("C02"));
+		append_qrcode(1,"2qr_msg17",SampleCode2.concat("C03"));
+		append_qrcode(1,"2qr_msg18",SampleCode2.concat("C04"));
+		//append_qrcode(1,"2qr_msg19",SampleCode2.concat("C05"));
+		//append_qrcode(1,"2qr_msg20",SampleCode2.concat("C06"));
+		//append_qrcode(1,"2qr_msg21",SampleCode2.concat("C07"));
+		append_qrcode(1,"2qr_msg22",SampleCode2.concat("PBMC01"));
+		append_qrcode(1,"2qr_msg23",SampleCode2.concat("PBMC02"));
+
+		}
+	if(SampleCode3!=""){
+		document.getElementById("3qr_label").innerHTML = SampleCode3.concat("S01") + "<br />" + newdate; 
+		document.getElementById("3qr_label2").innerHTML = SampleCode3.concat("S02") + "<br />" + newdate; 
+		document.getElementById("3qr_label3").innerHTML = SampleCode3.concat("S03") + "<br />" + newdate; 
+		document.getElementById("3qr_label4").innerHTML = SampleCode3.concat("S04") + "<br />" + newdate; 
+		document.getElementById("3qr_label5").innerHTML = SampleCode3.concat("S05") + "<br />" + newdate; 
+		document.getElementById("3qr_label6").innerHTML = SampleCode3.concat("S06") + "<br />" + newdate; 
+		//document.getElementById("3qr_label7").innerHTML = SampleCode3.concat("S07") + "<br />" + newdate; 
+		document.getElementById("3qr_label8").innerHTML = SampleCode3.concat("P01") + "<br />" + newdate; 
+		document.getElementById("3qr_label9").innerHTML = SampleCode3.concat("P02") + "<br />" + newdate; 
+		document.getElementById("3qr_label10").innerHTML = SampleCode3.concat("P03") + "<br />" + newdate; 
+		document.getElementById("3qr_label11").innerHTML = SampleCode3.concat("P04") + "<br />" + newdate; 
+		document.getElementById("3qr_label12").innerHTML = SampleCode3.concat("P05") + "<br />" + newdate; 
+		document.getElementById("3qr_label13").innerHTML = SampleCode3.concat("P06") + "<br />" + newdate; 
+		//document.getElementById("3qr_label14").innerHTML = SampleCode3.concat("P07") + "<br />" + newdate; 
+		document.getElementById("3qr_label15").innerHTML = SampleCode3.concat("C01") + "<br />" + newdate; 
+		document.getElementById("3qr_label16").innerHTML = SampleCode3.concat("C02") + "<br />" + newdate; 
+		document.getElementById("3qr_label17").innerHTML = SampleCode3.concat("C03") + "<br />" + newdate; 
+		document.getElementById("3qr_label18").innerHTML = SampleCode3.concat("C04") + "<br />" + newdate; 
+		//document.getElementById("3qr_label19").innerHTML = SampleCode3.concat("C05") + "<br />" + newdate; 
+		//document.getElementById("3qr_label20").innerHTML = SampleCode3.concat("C06") + "<br />" + newdate; 
+		//document.getElementById("3qr_label21").innerHTML = SampleCode3.concat("C07") + "<br />" + newdate; 
+		document.getElementById("3qr_label22").innerHTML = SampleCode3.concat("PBMC01") + "<br />" + newdate; 
+		document.getElementById("3qr_label23").innerHTML = SampleCode3.concat("PBMC01") + "<br />" + newdate;
+		
+
+
+		append_qrcode(1,"3qr_msg",SampleCode3.concat("S01"));
+		append_qrcode(1,"3qr_msg2",SampleCode3.concat("S02"));
+		append_qrcode(1,"3qr_msg3",SampleCode3.concat("S03"));
+		append_qrcode(1,"3qr_msg4",SampleCode3.concat("S04"));
+		append_qrcode(1,"3qr_msg5",SampleCode3.concat("S05"));
+		append_qrcode(1,"3qr_msg6",SampleCode3.concat("S06"));
+		//append_qrcode(1,"3qr_msg7",SampleCode3.concat("S07"));
+		append_qrcode(1,"3qr_msg8",SampleCode3.concat("P01"));
+		append_qrcode(1,"3qr_msg9",SampleCode3.concat("P02"));
+		append_qrcode(1,"3qr_msg10",SampleCode3.concat("P03"));
+		append_qrcode(1,"3qr_msg11",SampleCode3.concat("P04"));
+		append_qrcode(1,"3qr_msg12",SampleCode3.concat("P05"));
+		append_qrcode(1,"3qr_msg13",SampleCode3.concat("P06"));
+		//append_qrcode(1,"3qr_msg14",SampleCode3.concat("P07"));
+		append_qrcode(1,"3qr_msg15",SampleCode3.concat("C01"));
+		append_qrcode(1,"3qr_msg16",SampleCode3.concat("C02"));
+		append_qrcode(1,"3qr_msg17",SampleCode3.concat("C03"));
+		append_qrcode(1,"3qr_msg18",SampleCode3.concat("C04"));
+		//append_qrcode(1,"3qr_msg19",SampleCode3.concat("C05"));
+		//append_qrcode(1,"3qr_msg20",SampleCode3.concat("C06"));
+		//append_qrcode(1,"3qr_msg21",SampleCode3.concat("C07"));
+		append_qrcode(1,"3qr_msg22",SampleCode3.concat("PBMC01"));
+		append_qrcode(1,"3qr_msg23",SampleCode3.concat("PBMC02"));
+		
+		}
+	if(IndiCode1!=""){
+		document.getElementById("qr_label24").innerHTML = IndiCode1.concat("") + "<br />" + newdate;
+		append_qrcode(1,"qr_msg24",IndiCode1.concat(""));
+	}
+	if(IndiCode2!=""){
+		document.getElementById("qr_label25").innerHTML = IndiCode2.concat("") + "<br />" + newdate;
+		append_qrcode(1,"qr_msg25",IndiCode2.concat(""));
+	}
+	if(IndiCode3!=""){
+		document.getElementById("2qr_label24").innerHTML = IndiCode3.concat("") + "<br />" + newdate;
+		append_qrcode(1,"2qr_msg24",IndiCode3.concat(""));
+	}
+	if(IndiCode4!=""){
+		document.getElementById("2qr_label25").innerHTML = IndiCode4.concat("") + "<br />" + newdate;
+		append_qrcode(1,"2qr_msg25",IndiCode4.concat(""));
+	}
+	if(IndiCode5!=""){
+		document.getElementById("3qr_label24").innerHTML = IndiCode5.concat("") + "<br />" + newdate;
+		append_qrcode(1,"3qr_msg24",IndiCode5.concat(""));
+	}
+	if(IndiCode6!=""){
+		document.getElementById("3qr_label25").innerHTML = IndiCode6.concat("") + "<br />" + newdate;
+		append_qrcode(1,"3qr_msg25",IndiCode6.concat(""));
+	}
+	 
+	
+	document.getElementById("QRlabel1").style.display = "inline";
+	document.getElementById("QRlabel2").style.display = "inline";
+	document.getElementById("QRlabel3").style.display = "inline";
+	document.getElementById("QRmsg1").style.display = "inline";
+	document.getElementById("QRmsg2").style.display = "inline";
+	document.getElementById("QRmsg3").style.display = "inline";
+	}
+
+</script>
+
+</body>
+</html>
