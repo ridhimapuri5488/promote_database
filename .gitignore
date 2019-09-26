@@ -1,2 +1,6 @@
+src/.ipynb_checkpoints
+src/tasks/.ipynb_checkpoints
+*.csv
+src/promote_files_csv
 src/promote_files/build/
 src/promote_files/dist/promote_data_creation.exe
