@@ -1,4 +1,4 @@
-src/.ipynb_checkpoints
+*.ipynb_checkpoints*
 src/tasks/.ipynb_checkpoints
 *.csv
 src/promote_files_csv
