@@ -6,3 +6,7 @@ src/tasks/.ipynb_checkpoints
 src/promote_files_csv
 src/promote_files/build/
 src/promote_files/dist/promote_data_creation.exe
+src/promote_files/py_files/build/
+src/promote_files/py_files/dist
+
+
